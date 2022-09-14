@@ -29,4 +29,12 @@ function lesson3() {
     arr[1] = "newTwo";
     console.log(arr);
 }
-lesson3();
+// lesson3();
+
+// Вывести 5 сообщений с интервалом 2 секунды
+let i = 1
+let lesson4 = setInterval(() => {
+    console.log("msg " + i)
+    i ++
+}, 2000);
+setTimeout(()=> clearInterval(lesson4), 11000)
